@@ -1,0 +1,15 @@
+bc_bedrijfsprofiel.member_list:
+  path: '/bedrijfsprofiel_leden'
+  defaults:
+    _controller: '\Drupal\bc_bedrijfsprofiel\Controller\MemberListController::content'
+    _title: 'Bedrijfsprofiel leden'
+  requirements:
+    _permission: 'access CiviCRM'
+
+bc_bedrijfsprofiel.member_details:
+  path: '/bedrijfsprofiel_leden_details'
+  defaults:
+    _controller: '\Drupal\bc_bedrijfsprofiel\Controller\MemberDetailsController::content'
+    _title: 'Bedrijfsprofiel'
+  requirements:
+    _permission: 'access CiviCRM'
