@@ -5,6 +5,8 @@ bc_bedrijfsprofiel.member_list:
     _title: 'Bedrijfsprofiel leden'
   requirements:
     _permission: 'access CiviCRM'
+  options:
+    no_cache: 'TRUE'
 
 bc_bedrijfsprofiel.member_details:
   path: '/bedrijfsprofiel_leden_details'
@@ -13,3 +15,5 @@ bc_bedrijfsprofiel.member_details:
     _title: 'Bedrijfsprofiel'
   requirements:
     _permission: 'access CiviCRM'
+  options:
+    no_cache: 'TRUE'
