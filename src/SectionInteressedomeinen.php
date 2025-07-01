@@ -17,7 +17,7 @@ class SectionInteressedomeinen extends \Drupal\bc_bedrijfsprofiel\Section {
 
     $html = '<table>';
     while ($dao->fetch()) {
-      $html .= "<tr><td>{$dao->name}</td>";
+      $html .= "<tr><td>{$dao->label}</td>";
       $html .= "<td>{$dao->has_tag}</td>";
       $html .= "<td>{$dao->description}</td></tr>";
     }
