@@ -29,7 +29,7 @@ class SectionInteressedomeinen extends \Drupal\bc_bedrijfsprofiel\Section {
   private function getInteressedomeinen() {
     $sql = "
       select
-        t.name
+        t.label
         , (select if(et.id IS NOT NULL, 'x', '') from civicrm_entity_tag et where et.tag_id = t.id and et.entity_id = %1) has_tag
         , t.description
       from
